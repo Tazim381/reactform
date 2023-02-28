@@ -31,15 +31,12 @@ function Login() {
         label="Email"
         handleOnChange={handleOnChange}
       />
-      <div className="formInput">
-        <label>Password</label>
-        <input
-          name="password"
-          type="password"
-          onChange={handleOnChange}
-        ></input>
-      </div>
-
+      <FormInput
+        name="password"
+        type="password"
+        label="Password"
+        handleOnChange={handleOnChange}
+      />
       <div className="formInput">
         <input type="submit" value="login"></input>
       </div>

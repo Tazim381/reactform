@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function FormInput({ label, name, type, handleOnChange }) {
   return (
     <div className="formInput">
@@ -6,5 +8,12 @@ function FormInput({ label, name, type, handleOnChange }) {
     </div>
   );
 }
+
+FormInput.prototype = {
+  label: PropTypes.string.isRequired, //required
+  name: PropTypes.string.isRequired, //required
+  type: PropTypes.string.isRequired, //required
+  handleOnChange: PropTypes.func.isRequired,
+};
 
 export default FormInput;

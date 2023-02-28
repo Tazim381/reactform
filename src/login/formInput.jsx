@@ -16,4 +16,8 @@ FormInput.prototype = {
   handleOnChange: PropTypes.func.isRequired,
 };
 
+FormInput.defaultProps = {
+  type: "email",
+};
+
 export default FormInput;

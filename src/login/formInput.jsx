@@ -17,7 +17,7 @@ FormInput.prototype = {
 };
 
 FormInput.defaultProps = {
-  type: "email",
+  type: "email",  //kono value na dile default hisebe eta jabe
 };
 
 export default FormInput;

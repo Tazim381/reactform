@@ -8,7 +8,6 @@ function Login() {
     email: "",
     password: "",
   });
-
   const handleOnChange = (event) => {
     const update = {
       [event.target.name]: event.target.value,
